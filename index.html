@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Pollería Las Brasas-Zaña</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ff6700, #333);
+            color: #fff;
+            text-align: center;
+        }
+        /* Encabezado */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        header h1 {
+            color: #ffdd00;
+            font-size: 2.8em;
+            margin: 0;
+        }
+        header p {
+            color: #ddd;
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        /* Contenedor de menú */
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 10px;
+        }
+        
+        /* Tarjetas de sección del menú */
+        .menu-section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .menu-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Encabezado de cada sección */
+        .menu-section h2 {
+            color: #ffdd00;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff6700;
+            padding-bottom: 10px;
+        }
+        
+        /* Elementos del menú */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #555;
+            align-items: center;
+            color: #ddd;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item:hover {
+            color: #ffdd00;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #ffdd00;
+        }
+
+        /* Fondo y bordes de las imágenes de los ítems */
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin-right: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Espacio para el logo -->
+        <img src="https://scontent.flim14-1.fna.fbcdn.net/v/t39.30808-6/404301108_122108036402119315_3787305359767614092_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHz33Zt2pRZcUCOnj7VUCeHsCanoadbTWywJqehp1tNbH5DJDt1G6X7wXd-JprSf-zZWDcWf-vTI3LRE5iTmyD_&_nc_ohc=x6C3EX6rOqkQ7kNvgGyvfiC&_nc_zt=23&_nc_ht=scontent.flim14-1.fna&_nc_gid=AkKyDA_ONmFz8fW9Ssok2AF&oh=00_AYDD7asRkefjxX2RwMJktMFF-16q5BlUkPoaix34zTYdwA&oe=67272999" alt="Logo de Las Brasas-Zaña">
+        <div>
+            <h1>Menú - Pollería Las Brasas-Zaña</h1>
+            <p>Disfruta de nuestros sabores únicos</p>
+        </div>
+    </header>
+
+    <div class="menu-container">
+        <!-- Sección de Pollos -->
+        <section class="menu-section">
+            <h2>Pollos</h2>
+            <div class="menu-item">
+                <span>Octavo de pollo a la brasa</span>
+                <span class="price">S/ 10.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Cuarto de pollo a la brasa</span>
+                <span class="price">S/ 20.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Medio pollo a la brasa</span>
+                <span class="price">S/ 32.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Pollo entero a la brasa</span>
+                <span class="price">S/ 58.00</span>
+            </div>
+        </section>
+
+        <!-- Sección de Platos Especiales -->
+        <section class="menu-section">
+            <h2>Platos Especiales</h2>
+            <div class="menu-item">
+                <span>Chaufa de pollo</span>
+                <span class="price">S/ 14.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Chaufa especial</span>
+                <span class="price">S/ 18.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Chuleta</span>
+                <span class="price">S/ 14.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Pollo a la plancha</span>
+                <span class="price">S/ 14.00</span>
+            </div>
+        </section>
+
+        <!-- Sección de Acompañamientos -->
+        <section class="menu-section">
+            <h2>Acompañamientos</h2>
+            <div class="menu-item">
+                <span>Papas fritas</span>
+                <span class="price">S/ 8.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Ensalada</span>
+                <span class="price">S/ 5.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Porción de arroz pequeña</span>
+                <span class="price">S/ 3.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Porción de arroz grande</span>
+                <span class="price">S/ 5.00</span>
+            </div>
+        </section>
+
+        <!-- Sección de Bebidas -->
+        <section class="menu-section">
+            <h2>Bebidas</h2>
+            <div class="menu-item">
+                <span>Gaseosa Personal</span>
+                <span class="price">S/ 2.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Gaseosa 500ml</span>
+                <span class="price">S/ 4.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Gaseosa 1L</span>
+                <span class="price">S/ 7.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Gaseosa 1L 1/2</span>
+                <span class="price">S/ 10.00</span>
+            </div>
+            <div class="menu-item">
+                <span>Gaseosa 3</span>
+                <span class="price">S/ 12.00</span>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
